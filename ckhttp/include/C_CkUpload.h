@@ -1,0 +1,64 @@
+#ifndef _CkUpload_H
+#define _CkUpload_H
+#include "Chilkat_C.h"
+
+HCkUpload CkUpload_Create(void);
+void CkUpload_Dispose(HCkUpload handle);
+int CkUpload_getChunkSize(HCkUpload cHandle);
+void CkUpload_putChunkSize(HCkUpload cHandle, int newVal);
+void CkUpload_getHostname(HCkUpload cHandle, HCkString retval);
+void CkUpload_putHostname(HCkUpload cHandle, const char *newVal);
+int CkUpload_getIdleTimeoutMs(HCkUpload cHandle);
+void CkUpload_putIdleTimeoutMs(HCkUpload cHandle, int newVal);
+void CkUpload_getLastErrorHtml(HCkUpload cHandle, HCkString retval);
+void CkUpload_getLastErrorText(HCkUpload cHandle, HCkString retval);
+void CkUpload_getLastErrorXml(HCkUpload cHandle, HCkString retval);
+void CkUpload_getLogin(HCkUpload cHandle, HCkString retval);
+void CkUpload_putLogin(HCkUpload cHandle, const char *newVal);
+unsigned long CkUpload_getNumBytesSent(HCkUpload cHandle);
+void CkUpload_getPassword(HCkUpload cHandle, HCkString retval);
+void CkUpload_putPassword(HCkUpload cHandle, const char *newVal);
+void CkUpload_getPath(HCkUpload cHandle, HCkString retval);
+void CkUpload_putPath(HCkUpload cHandle, const char *newVal);
+unsigned long CkUpload_getPercentUploaded(HCkUpload cHandle);
+int CkUpload_getPort(HCkUpload cHandle);
+void CkUpload_putPort(HCkUpload cHandle, int newVal);
+void CkUpload_getProxyDomain(HCkUpload cHandle, HCkString retval);
+void CkUpload_putProxyDomain(HCkUpload cHandle, const char *newVal);
+void CkUpload_getProxyLogin(HCkUpload cHandle, HCkString retval);
+void CkUpload_putProxyLogin(HCkUpload cHandle, const char *newVal);
+void CkUpload_getProxyPassword(HCkUpload cHandle, HCkString retval);
+void CkUpload_putProxyPassword(HCkUpload cHandle, const char *newVal);
+long CkUpload_getProxyPort(HCkUpload cHandle);
+void CkUpload_putProxyPort(HCkUpload cHandle, long newVal);
+void CkUpload_getResponseBody(HCkUpload cHandle, HCkByteData retval);
+void CkUpload_getResponseHeader(HCkUpload cHandle, HCkString retval);
+int CkUpload_getResponseStatus(HCkUpload cHandle);
+BOOL CkUpload_getSsl(HCkUpload cHandle);
+void CkUpload_putSsl(HCkUpload cHandle, BOOL newVal);
+unsigned long CkUpload_getTotalUploadSize(HCkUpload cHandle);
+BOOL CkUpload_getUploadInProgress(HCkUpload cHandle);
+BOOL CkUpload_getUploadSuccess(HCkUpload cHandle);
+BOOL CkUpload_getUtf8(HCkUpload cHandle);
+void CkUpload_putUtf8(HCkUpload cHandle, BOOL newVal);
+void CkUpload_getVersion(HCkUpload cHandle, HCkString retval);
+void CkUpload_AddCustomHeader(HCkUpload cHandle, const char *name, const char *value);
+void CkUpload_AddFileReference(HCkUpload cHandle, const char *name, const char *filename);
+void CkUpload_AddParam(HCkUpload cHandle, const char *name, const char *value);
+BOOL CkUpload_BlockingUpload(HCkUpload cHandle);
+BOOL CkUpload_SaveLastError(HCkUpload cHandle, const char *filename);
+void CkUpload_SleepMs(HCkUpload cHandle, int millisec);
+BOOL CkUpload_UploadToMemory(HCkUpload cHandle, HCkByteData dataBuf);
+const char *CkUpload_hostname(HCkUpload cHandle);
+const char *CkUpload_lastErrorHtml(HCkUpload cHandle);
+const char *CkUpload_lastErrorText(HCkUpload cHandle);
+const char *CkUpload_lastErrorXml(HCkUpload cHandle);
+const char *CkUpload_login(HCkUpload cHandle);
+const char *CkUpload_password(HCkUpload cHandle);
+const char *CkUpload_path(HCkUpload cHandle);
+const char *CkUpload_proxyDomain(HCkUpload cHandle);
+const char *CkUpload_proxyLogin(HCkUpload cHandle);
+const char *CkUpload_proxyPassword(HCkUpload cHandle);
+const char *CkUpload_responseHeader(HCkUpload cHandle);
+const char *CkUpload_version(HCkUpload cHandle);
+#endif

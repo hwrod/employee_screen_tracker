@@ -1,0 +1,7 @@
+Employee Screen Tracker (Remote Screencapture)
+
+This C++ application runs quietly on any Windows machine and sends screenshots at regular intervals to your web server.
+
+It can be used for tracking employees' work time, providing simple support to clients, or just tracking what's going on on a computer throughout the day.
+
+The image filenames are based on the application's filename, which are validated using a custom validator service on your web server.
